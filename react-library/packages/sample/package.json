@@ -1,5 +1,5 @@
 {
-  "name": "@library/library-extension",
+  "name": "@library/library",
   "version": "0.1",
   "description": "A very awesome app",
   "homepage": "https://github.com/johndoe/app#readme",
@@ -20,6 +20,7 @@
   },
   "dependencies": {
     "@library/library": "file:../library",
+    "@library/library-extension": "file:../library-extension",
     "jsdom": "^26.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
