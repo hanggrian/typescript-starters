@@ -1,5 +1,5 @@
 import {JSX} from 'react';
-import LabelExtImpl from '@library/library-extension/src/label-ext-impl';
+import LabelExtImpl from '@library/library-extension/label-ext-impl';
 
 export default function View(): JSX.Element {
   const impl =
@@ -10,6 +10,6 @@ export default function View(): JSX.Element {
         getHeight: () => 100,
       });
   return (
-      <label>{`${impl.getSize()} pixels at ${impl.getPosition()}`}</label>
+      <label>{`${impl.getSize()} pixels at ${impl.getPosition()}.`}</label>
   );
 }

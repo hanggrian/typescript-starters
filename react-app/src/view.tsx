@@ -8,6 +8,6 @@ export default function View(): JSX.Element {
       getHeight: () => 100,
     });
   return (
-    <label>{`${impl.getSize()} pixels`}</label>
+    <label>{`${impl.getSize()} pixels.`}</label>
   );
 }

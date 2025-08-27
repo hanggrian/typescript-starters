@@ -1,4 +1,4 @@
-import LabelImpl, {Label} from '@library/library/src/label-impl';
+import LabelImpl, {Label} from '@library/library/label-impl';
 
 export type LabelExt = Label & {
   getX: () => number,

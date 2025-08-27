@@ -13,6 +13,7 @@
   "license": "Apache-2.0",
   "author": "John Doe <johndoe@mail.com>",
   "type": "module",
+  "files": ["src/"],
   "scripts": {
     "test": "vitest --run __tests__",
     "coverage": "vitest run --coverage __tests__ --reporter=junit --outputFile=test-report.junit.xml",
