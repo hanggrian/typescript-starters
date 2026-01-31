@@ -7,20 +7,23 @@ import sinon, {SinonStub} from 'sinon';
 type MockedLabelExt = {
   getX: SinonStub<any[], number>,
   getY: SinonStub<any[], number>,
+  getWidth: SinonStub<any[], number>,
+  getHeight: SinonStub<any[], number>,
 };
 
 describe(
     'LabelExtImpl',
     () => {
       let label: MockedLabelExt;
-      let app;
 
       beforeEach(() => {
         label = {
           getX: sinon.stub(),
           getY: sinon.stub(),
+          getWidth: sinon.stub(),
+          getHeight: sinon.stub(),
         };
-        app = render(<div></div>);
+        render(<div></div>);
       });
 
       it(

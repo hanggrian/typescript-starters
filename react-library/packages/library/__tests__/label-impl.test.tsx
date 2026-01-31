@@ -1,6 +1,6 @@
 import {afterEach, beforeEach, describe, expect, it} from 'vitest';
 import '@testing-library/jest-dom';
-import {render, RenderResult} from '@testing-library/react';
+import {render} from '@testing-library/react';
 import LabelImpl from '../src/label-impl';
 import sinon, {SinonStub} from 'sinon';
 
@@ -13,14 +13,13 @@ describe(
     'LabelImpl',
     () => {
       let label: MockedLabel;
-      let app: RenderResult;
 
       beforeEach(() => {
         label = {
           getWidth: sinon.stub(),
           getHeight: sinon.stub(),
         };
-        app = render(<div></div>);
+        render(<div></div>);
       });
 
       it(

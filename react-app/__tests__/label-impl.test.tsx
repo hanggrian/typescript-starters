@@ -13,14 +13,13 @@ describe(
   'LabelImpl',
   () => {
     let label: MockedLabel;
-    let app;
 
     beforeEach(() => {
       label = {
         getWidth: sinon.stub(),
         getHeight: sinon.stub(),
       };
-      app = render(<div></div>);
+      render(<div></div>);
     });
 
     it(
