@@ -1,6 +1,6 @@
 {
-  "name": "sample",
   "private": true,
+  "name": "sample",
   "type": "module",
   "files": ["src/"],
   "scripts": {
