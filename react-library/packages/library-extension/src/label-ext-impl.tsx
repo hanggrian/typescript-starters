@@ -1,4 +1,4 @@
-import LabelImpl, {Label} from '@library/library/label-impl';
+import LabelImpl, {Label} from 'library/label-impl';
 
 export type LabelExt = Label & {
   getX: () => number,
@@ -12,7 +12,7 @@ class LabelExtImpl extends LabelImpl {
     super(label);
   }
 
-  getPosition() {
+  getPosition(): string {
     return `(${this.label.getX()},${this.label.getY()})`;
   }
 }

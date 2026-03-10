@@ -1,8 +1,7 @@
 import {afterEach, beforeEach, describe, expect, it} from 'vitest';
-import '@testing-library/jest-dom';
 import {render} from '@testing-library/react';
-import LabelExtImpl from '../label-ext-impl.tsx';
-import sinon, {SinonStub} from 'sinon';
+import LabelExtImpl from '../label-ext-impl';
+import {SinonStub, assert, stub, restore} from 'sinon';
 
 type MockedLabelExt = {
   getX: SinonStub<any[], number>,
@@ -18,10 +17,10 @@ describe(
 
       beforeEach(() => {
         label = {
-          getX: sinon.stub(),
-          getY: sinon.stub(),
-          getWidth: sinon.stub(),
-          getHeight: sinon.stub(),
+          getX: stub(),
+          getY: stub(),
+          getWidth: stub(),
+          getHeight: stub(),
         };
         render(<div></div>);
       });
@@ -32,11 +31,11 @@ describe(
             label.getX.returns(0);
             label.getY.returns(1);
             expect(new LabelExtImpl(label).getPosition()).toBe('(0,1)');
-            sinon.assert.calledOnce(label.getX);
-            sinon.assert.calledOnce(label.getY);
+            assert.calledOnce(label.getX);
+            assert.calledOnce(label.getY);
           },
       );
 
-      afterEach(() => sinon.restore());
+      afterEach(() => restore());
     },
 );

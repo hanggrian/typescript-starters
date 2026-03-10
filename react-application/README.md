@@ -3,7 +3,7 @@
 [![GitHub Releases](https://img.shields.io/github/release/johndoe/app)](https://github.com/johndoe/app/releases/)
 [![TypeScript](https://img.shields.io/badge/typescript-5.7+-informational)](https://www.typescriptlang.org/docs/handbook/release-notes/typescript-5-7.html)
 
-# My App
+# My Application
 
 Some cool stuff going on here.
 
