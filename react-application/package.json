@@ -1,29 +1,18 @@
 {
-  "name": "my-app",
-  "version": "0.1",
-  "description": "A very awesome app",
-  "homepage": "https://github.com/johndoe/app#readme",
-  "bugs": {
-    "url": "https://github.com/johndoe/app/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/johndoe/app.git"
-  },
-  "license": "Apache-2.0",
-  "author": "John Doe <johndoe@mail.com>",
+  "name": "my-application",
+  "private": true,
   "type": "module",
   "files": [
     "src"
   ],
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint src/",
+    "build": "tsc -p tsconfig.build.json && vite build",
     "preview": "vite preview",
+    "lint": "eslint src/",
     "test": "vitest --run src/__tests__/",
     "coverage": "vitest run --coverage --reporter=junit --outputFile=test-report.junit.xml"
   },
+  "packageManager": "pnpm@10.30.3",
   "dependencies": {
     "jsdom": "^26.0.0",
     "react": "^19.0.0",

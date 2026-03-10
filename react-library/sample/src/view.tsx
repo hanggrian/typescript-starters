@@ -1,5 +1,5 @@
 import {JSX} from 'react';
-import LabelExtImpl from '@library/library-extension/label-ext-impl';
+import LabelExtImpl from 'library-extension/label-ext-impl';
 
 export default function View(): JSX.Element {
   const impl =
