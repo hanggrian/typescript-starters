@@ -28,6 +28,7 @@ warn 'Testing application...'
 echo '(1/3) Running PNPM commands'
 cd "$APPLICATION" || exit 1
 pnpm i
+pnpm build
 pnpm lint
 pnpm test
 pnpm coverage

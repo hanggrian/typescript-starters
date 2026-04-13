@@ -1,6 +1,5 @@
 {
-  "extends": ["./typedoc.base.jsonc"],
-  "entryPoints": [
-    "src/"
-  ]
+  "$schema": "https://typedoc.org/schema.json",
+  "includeVersion": true,
+  "entryPoints": ["src/"]
 }

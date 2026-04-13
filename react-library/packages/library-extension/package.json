@@ -14,22 +14,21 @@
   "author": "John Doe <johndoe@mail.com>",
   "type": "module",
   "main": "dist/index.js",
-  "exports": {
-    "./label-ext-impl": "./dist/label-ext-impl.js"
-  },
-  "files": [
-    "dist"
-  ],
+  "files": ["dist"],
   "scripts": {
     "build": "tsc -p tsconfig.build.json",
     "test": "vitest --run src/__tests__/",
     "coverage": "vitest run --coverage src/__tests__ --reporter=junit --outputFile=test-report.junit.xml"
   },
+  "exports": {
+    "./label-ext-impl": "./dist/label-ext-impl.js"
+  },
+  "peerDependencies": {
+    "library": "workspace:*"
+  },
   "dependencies": {
-    "library": "workspace:*",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "typescript": "~5.7.2"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@types/css-modules": "^1.0.5",

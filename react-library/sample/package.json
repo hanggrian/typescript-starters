@@ -2,22 +2,20 @@
   "name": "sample",
   "private": true,
   "type": "module",
-  "files": [
-    "src"
-  ],
+  "files": ["src"],
   "scripts": {
     "build": "exit 0",
     "test": "exit 0",
     "coverage": "exit 0",
     "docs": "exit 0"
   },
-  "dependencies": {
+  "peerDependencies": {
     "library": "workspace:*",
-    "library-extension": "workspace:*",
+    "library-extension": "workspace:*"
+  },
+  "dependencies": {
     "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "typescript": "~5.7.2",
-    "vite": "^6.3.4"
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@types/css-modules": "^1.0.5",
