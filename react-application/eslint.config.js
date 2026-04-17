@@ -5,7 +5,7 @@ import eslintPluginReactRefresh from 'eslint-plugin-react-refresh';
 import typescriptEslint from 'typescript-eslint';
 
 export default typescriptEslint.config(
-    {ignores: ['dist']},
+    { ignores: ['dist'] },
     {
       extends: [js.configs.recommended, ...typescriptEslint.configs.recommended],
       files: ['**/*.{ts,tsx}'],
@@ -21,7 +21,7 @@ export default typescriptEslint.config(
         ...eslintPluginReactHooks.configs.recommended.rules,
         'react-refresh/only-export-components': [
           'warn',
-          {allowConstantExport: true},
+          { allowConstantExport: true },
         ],
 
         '@typescript-eslint/no-explicit-any': 'off',

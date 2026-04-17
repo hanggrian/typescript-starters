@@ -26,6 +26,9 @@
   "peerDependencies": {
     "library": "workspace:*"
   },
+  "engines": {
+    "node": ">=12.0.0"
+  },
   "dependencies": {
     "react": "^19.0.0",
     "react-dom": "^19.0.0"

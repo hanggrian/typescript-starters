@@ -1,7 +1,7 @@
-import {afterEach, beforeEach, describe, expect, it} from 'vitest';
-import {render} from '@testing-library/react';
+import { afterEach, beforeEach, describe, expect, it } from 'vitest';
+import { render } from '@testing-library/react';
 import LabelImpl from '../label-impl';
-import {SinonStub, assert, stub, restore} from 'sinon';
+import { assert, restore, type SinonStub, stub } from 'sinon';
 
 type MockedLabel = {
   getWidth: SinonStub<any[], number>,
