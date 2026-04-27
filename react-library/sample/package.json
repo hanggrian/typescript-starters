@@ -2,7 +2,9 @@
   "name": "sample",
   "private": true,
   "type": "module",
-  "files": ["src"],
+  "files": [
+    "src"
+  ],
   "scripts": {
     "build": "exit 0",
     "test": "exit 0",
