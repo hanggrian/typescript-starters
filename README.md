@@ -37,6 +37,6 @@ react-library | [Vitest] | [Package Manager] | [TypeDoc], [Just the Docs]
   - The webpages are manually deployed with `jekyll build`.
 
 [Vitest]: https://vitest.dev/
-[Package Manager]: https://www.npmjs.com/
+[Package Manager]: https://npmjs.com/
 [TypeDoc]: https://typedoc.org/
 [Just the Docs]: https://just-the-docs.com/

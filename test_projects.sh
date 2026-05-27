@@ -31,7 +31,7 @@ pnpm i
 pnpm build
 pnpm lint
 pnpm test
-pnpm coverage
+pnpm cov
 build_website
 cd "$APPLICATION" || exit 1
 
@@ -53,7 +53,7 @@ cd "$LIBRARY" || exit 1
 pnpm i
 pnpm lint
 pnpm -r test
-pnpm -r coverage
+pnpm -r cov
 pnpm doc
 build_website
 cd "$LIBRARY" || exit 1
